@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Fuck UTM",
+  "description": "Turn UTM parameter values into 'YO+MAMA'",
+  "version": "1.0",
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["js/background.js"]
+  }
+}
