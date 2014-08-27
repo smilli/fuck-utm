@@ -1,7 +1,10 @@
 $(function(){
   $(document).on('click', 'a', function(e){
     e.preventDefault();
-    handleLinkClick($(this));
+    var linkTarget = $(this).attr('target') ? $(this).attr('target') : '_self';
+    var linkHref = $(this).attr('href');
+    linkHref = replaceUrl(linkHref);
+    window.open(linkHref, linkTarget);
   });
 });
 
@@ -13,12 +16,7 @@ var UTM_CODES = [
   'utm_campaign'
 ];
 
-var handleLinkClick = function(elem) {
-  var linkTarget = $(this).attr('target') ? $(this).attr('target') : '_self';
-  var linkHref = $(this).attr('href');
-  linkHref = replaceUrl(linkHref);
-  window.open(linkHref, linkTarget);
-};
+var REPLACER = 'YO%20MAMA';
 
 // Gets the index of the separator in the string
 // Returns the length of the string if seperator not found
@@ -44,7 +42,7 @@ var replaceQueryParams = function(queryParamsStr) {
   for (var i = 0; i < params.length; i++) {
     var param = params[i].split('=');
     if (UTM_CODES.indexOf(param[0]) !== -1) {
-      param[1] = 'YO+MAMA';
+      param[1] = REPLACER;
     }
     param = param.join('=');
     editedParams.push(param);

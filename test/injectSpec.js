@@ -4,8 +4,8 @@ describe('fuck-utm', function(){
       'utm_source=google&param1=lelouch&utm_term=term&utm_content=content' +
       '&param2=neopets&utm_campaign=sales');
     var expectedEditedParams = (
-      'utm_source=YO+MAMA&param1=lelouch&utm_term=YO+MAMA&' +
-      'utm_content=YO+MAMA&param2=neopets&utm_campaign=YO+MAMA');
+      'utm_source=' + REPLACER + '&param1=lelouch&utm_term=' + REPLACER +
+      '&utm_content=' + REPLACER + '&param2=neopets&utm_campaign=' + REPLACER);
     var editedParams = replaceQueryParams(queryParamsStr);
     expect(editedParams).toBe(expectedEditedParams);
   });
@@ -15,8 +15,8 @@ describe('fuck-utm', function(){
     var editedUrl = replaceUrl(url);
     expect(editedUrl).toBe(url);
 
-    var url = 'http://google.com:80#section?badurl';
-    var editedUrl = replaceUrl(url);
+    url = 'http://google.com:80#section?badurl';
+    editedUrl = replaceUrl(url);
     expect(editedUrl).toBe(url);
   });
 
@@ -25,8 +25,9 @@ describe('fuck-utm', function(){
       'http://google.com/?utm_source=google&param1=lelouch&utm_term=term&' +
       'utm_content=content&param2=neopets&utm_campaign=sales#section');
     var expectedEditedUrl = (
-      'http://google.com/?utm_source=YO+MAMA&param1=lelouch&utm_term=YO+MAMA&' +
-      'utm_content=YO+MAMA&param2=neopets&utm_campaign=YO+MAMA#section');
+      'http://google.com/?utm_source=' + REPLACER + '&param1=lelouch&' +
+      'utm_term=' + REPLACER + '&utm_content=' + REPLACER + '&param2=neopets' +
+      '&utm_campaign=' + REPLACER + '#section');
     var editedUrl = replaceUrl(expectedEditedUrl);
     expect(editedUrl).toBe(expectedEditedUrl);
   });
