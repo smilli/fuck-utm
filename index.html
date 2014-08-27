@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Fuck UTM</title>
+
+	<link rel="stylesheet" type="text/css" href="vendor/css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Fuck UTM: replace url referral parameters with 'YO MAMA'" data-via="SmithaMilli">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<div id="fullpage">
+  <div class="section">
+    <h1>Tired of seeing ugly urls like this?</h1>
+    <p>www.mywebsite.com/
+    ?utm_source=google
+    &utm_medium=email
+    &utm_term=running%20shoes
+    &utm_content=logolink
+    &utm_campaign=aug14sale</p>
+	</div>
+  <div class="section">
+    <h1>What if we could make it better?</h1>
+    <p>www.mywebsite.com/
+    ?utm_source=<span class="yo-mama">YO</span>%20<span class="yo-mama">MAMA</span>
+    &utm_medium=<span class="yo-mama">YO</span>%20<span class="yo-mama">MAMA</span>
+    &utm_term=<span class="yo-mama">YO</span>%20<span class="yo-mama">MAMA</span>
+    &utm_content=<span class="yo-mama">YO</span>%20<span class="yo-mama">MAMA</span>
+    &utm_campaign=<span class="yo-mama">YO</span>%20<span class="yo-mama">MAMA</span></p>
+	</div>
+  <div class="section">
+    <h1>Introducing Fuck UTM.</h1>
+    <p>A chrome extension that automatically replaces any UTM referral parameters in links you click with YO MAMA.</p>
+    <button class="btn">Download Now</button>
+  </div>
+  <div class="section">
+    <h1>LOL</h1>
+    <p>This extension was made by <a href="http://twitter.com/smithamilli">Smitha Milli</a> for the lulz. But forreal, we seriously *still* use referral parameters in urls nowadays?</p>
+
+    <p>Here's <a href="https://github.com/smilli/fuck-utm">the code on Github</a>.  Disclaimer: it checks all links you click on, so there may be some rare side effects.</p>
+  </div>
+  <div class="section">
+    <div class="slide">
+      <h1>Inspiration</h1>
+      <p>My momma always told me, "Be careful what you tweet for, it just might come true."</p>
+  </div>
+  <div class="slide" id="inspiration">
+    <blockquote class="twitter-tweet" align="center" lang="en"><p>Having referral information embedded in the URL (utm_campaign etc.) is pretty silly, internet.</p>&mdash; Domenic Denicola (@domenic) <a href="https://twitter.com/domenic/statuses/503984781101912067">August 25, 2014</a></blockquote>
+  </div>
+  <div class="slide" id="inspiration">
+    <blockquote class="twitter-tweet" align="center" data-conversation="none" lang="en"><p><a href="https://twitter.com/domenic">@domenic</a> I regularly switch it to &quot;YOUR+MOM&quot;</p>&mdash; Ryan Florence (@ryanflorence) <a href="https://twitter.com/ryanflorence/statuses/503987155124097024">August 25, 2014</a></blockquote>
+  </div>
+  <div class="slide" id="inspiration">
+    <blockquote class="twitter-tweet" align="center" data-conversation="none" lang="en"><p><a href="https://twitter.com/johnallsopp">@johnallsopp</a> <a href="https://twitter.com/domenic">@domenic</a> I was tempted to write a browser extension called &quot;Fuck UTM&quot;, which strips these arguments from links you open</p>&mdash; Colin Gourlay (@collypops) <a href="https://twitter.com/collypops/statuses/504033554154520576">August 25, 2014</a></blockquote>
+  </div>
+
+  </div>
+</div>
+
+  <!-- Fullpage.js -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="vendor/js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="vendor/js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+      $('#fullpage').fullpage({
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['The Ugly', 'The Great', 'Fuck UTM', 'LOL', 'Inspiration'],
+        scrollOverflow: true,
+      });
+		});
+	</script>
+  <!-- Twitter embedded tweets script -->
+  <script src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>

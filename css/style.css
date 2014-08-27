@@ -1,0 +1,144 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;    
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+#fullpage .section p{
+  word-wrap: break-word;
+}
+h1{
+	font-size: 5.5em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 4em;
+}
+h3 {
+  font-size: 2.5em;
+}
+p {
+	font-size: 2em;
+}
+
+a {
+  color: #B6E8E4;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.section p {
+	width: 50%;
+	margin: 0 auto;
+}
+.section{
+	text-align:center;
+}
+.section:nth-child(odd) {
+  background-color: #F7483B;
+}
+.section:nth-child(even) {
+  background-color: #03C8FA;
+}
+.yo-mama {
+  color: #fff;
+}
+.btn {
+  margin-top: 15px;
+  color: #ffffff;
+  font-size: 2em;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+/* Overwriting fullPage.js tooltip color
+ *  * --------------------------------------- */
+.fp-tooltip{
+  color: #fff;
+}
+#fp-nav span, .fp-slidesNav span{
+  border-color: #fff;
+}
+#fp-nav li .active span, .fp-slidesNav .active span{
+  background: #fff;
+}
+
+/* Overwrite fullPage.js arrow position to
+ * avoid colliding with navigation on right */
+.fp-controlArrow.fp-prev{
+  left: 45px;
+}
+
+.fp-controlArrow.fp-next{
+  right: 45px;
+}
+/* Twitter share and embed widgets */
+.twitter-share-button{
+	position: fixed;
+	z-index: 99;
+	right: 50px;
+	bottom: 10px;
+}
