@@ -5,7 +5,7 @@
   <title>Fuck UTM</title>
 
 	<link rel="stylesheet" type="text/css" href="vendor/css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/style.css" />
 
   <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/jjaagodohagklnhkkjlbojpbecdgfbcc">
 </head>
@@ -20,7 +20,7 @@
     <p>www.mywebsite.com/
     ?utm_source=google
     &utm_medium=email
-    &utm_term=running%20shoes
+    &utm_term=baby%20unicorns
     &utm_content=logolink
     &utm_campaign=aug14sale</p>
 	</div>
@@ -36,7 +36,16 @@
   <div class="section">
     <h1>Introducing Fuck UTM.</h1>
     <p>A chrome extension that automatically replaces any UTM referral parameters in links you click with YO MAMA.</p>
-    <button class="btn" onclick="chrome.webstore.install()">Download Now</button>
+    <button id="download" class="btn" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/jjaagodohagklnhkkjlbojpbecdgfbcc', 'handleDownloadSuccess')">Download Now</button>
+    <br/>
+    <p id="trial">Thanks for downloading!  Try it out:</br>
+    <a href="trial.html?utm_source=google&utm_medium=email&utm_term=baby%20unicorns&utm_content=logolink&utm_campaign=aug14sale" target="_blank">
+    http://smithamilli.com/trial.html?
+    utm_source=google
+    &utm_medium=email
+    &utm_term=baby%20unicorns
+    &utm_content=logolink
+    &utm_campaign=aug14sale</a></p>
   </div>
   <div class="section">
     <h1>LOL</h1>
@@ -67,16 +76,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="vendor/js/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript" src="vendor/js/jquery.fullPage.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-      $('#fullpage').fullpage({
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['The Ugly', 'The Great', 'Fuck UTM', 'LOL', 'Inspiration'],
-        scrollOverflow: true,
-      });
-		});
-	</script>
+	<script type="text/javascript" src="static/js/main.js"></script>
   <!-- Twitter embedded tweets script -->
   <script src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

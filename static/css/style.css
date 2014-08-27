@@ -72,11 +72,11 @@ p {
 }
 
 a {
-  color: #B6E8E4;
+  color: rgba(255,255,255,0.7);
 }
 
 a:hover {
-  color: #fff;
+  color: rgba(255,255,255,1);
 }
 
 .section p {
@@ -112,6 +112,9 @@ a:hover {
   cursor: pointer;
   background: #3cb0fd;
   text-decoration: none;
+}
+#trial {
+  display: none;
 }
 
 /* Overwriting fullPage.js tooltip color
