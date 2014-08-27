@@ -14,7 +14,7 @@
         "https://*/*"
       ],
       "js": [
-        "bower_components/jquery/dist/jquery.min.js",
+        "vendor/jquery.min.js",
         "js/inject.js"
       ]
     }

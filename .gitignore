@@ -4,3 +4,4 @@ bower_components/
 logs/*
 !.gitkeep
 tmp
+app/vendor/

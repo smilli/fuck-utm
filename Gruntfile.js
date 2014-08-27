@@ -5,7 +5,7 @@ module.exports = function(grunt) {
       all: ['Gruntfile.js', 'js/*.js', 'test/*.js']
     },
     jasmine: {
-      src: 'js/*.js',
+      src: 'app/js/*.js',
       options: {
         specs: 'test/*Spec.js',
         vendor: 'bower_components/jquery/dist/jquery.min.js'
