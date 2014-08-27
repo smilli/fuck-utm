@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- This page should ideally detect the change in expected params, whether
+the extension is installed, and not rely on fullPage.js.  But I'm lazy
+right now -->
+<head>
+  <title>Fuck UTM</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="vendor/css/jquery.fullPage.css" />
+</head>
+<body>
+
+  <div id="fullpage">
+    <div class="section">
+      <h1>Congratulations, your URL just became 10x better!</h1>
+    </div>
+  </div>
+
+<!-- Fullpage.js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="vendor/js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="vendor/js/jquery.fullPage.min.js"></script>
+<!-- Custom -->
+<script>
+  $('#fullpage').fullpage({});
+</script>
+</body>

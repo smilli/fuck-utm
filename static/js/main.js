@@ -8,12 +8,7 @@ $(document).ready(function() {
 
   var $downloadBtn = $('#download');
   var $trial = $('#trial');
-  var WEBSTORE_URL = 'https://chrome.google.com/webstore/detail/jjaagodohagklnhkkjlbojpbecdgfbcc'; 
-
-  if (chrome.app.isInstalled){
-    $downloadBtn.hide();
-    $trial.show();
-  }
+  var WEBSTORE_URL = 'https://chrome.google.com/webstore/detail/jjaagodohagklnhkkjlbojpbecdgfbcc';
 
   var handleDownloadSuccess = function() {
     $downloadBtn.fadeOut(750, function(){
